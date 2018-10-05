@@ -22,8 +22,8 @@
 			<th>Origin</th>
 			<th>Destination</th>
 			<th>Time</th>
-			<th>Remove</th>
 			<th>Edit Flight</th>
+			<th>Remove</th>
 		</tr>
 		<tr th:each="flight : ${pilot.getPilotFlight()}">
 			<td><a th:href="@{/flight/view/{id}(id=${flight.id})}" th:text="${flight.flightNumber}"></a></td>
